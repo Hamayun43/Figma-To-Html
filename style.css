@@ -1,0 +1,249 @@
+:root {
+  --dark-blue-color--: #4a4bc8;
+  --blue-color--: #057ada;
+  --black-color--: #000000;
+  --white-color--: #ffffff;
+  --light-grey-color--: #f1f1f1;
+  --pink-color--: #902183;
+  --yellow-color--: #ffde2f;
+  --light-red-color--: #ff2f6c;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Faustina", serif;
+}
+
+.wrapper {
+  background-color: var(--white-color--);
+}
+
+.logo {
+  width: 180px;
+  height: 80px;
+  margin: 19px 0;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+  background: linear-gradient(
+    var(--dark-blue-color--) 0%,
+    var(--pink-color--) 100%
+  );
+}
+
+.main .content p {
+  font-family: "Faustina";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.main .content p.dark {
+  color: var(--yellow-color--);
+}
+.main .content p.light {
+  color: var(--white-color--);
+}
+
+.main .content .card {
+  margin: 0 30px;
+}
+.main .content .card .digit {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #ff2f6c;
+  line-height: 1;
+}
+.main .content .card .dt {
+  line-height: 0;
+  text-transform: uppercase;
+  color: #828282;
+  font-size: 16px;
+}
+@media (max-width: 575px) {
+  .main .content .card .dt {
+    font-size: 12px;
+  }
+  .main .content .functions p {
+    margin: 0 30px;
+    line-height: 2;
+  }
+}
+.main .content .lead {
+  margin: 20px 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--white-color--);
+}
+.main .content .functions {
+  margin: 35px auto;
+}
+.main .content .functions p {
+  color: var(--white-color--);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.main .content .functions p span {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+.main .content .price-card {
+  margin: 0 60px;
+}
+.main .content .price-card .price {
+  background: #0f0f0f;
+  border: 2px dashed #f3ab21;
+  border-radius: 6px;
+}
+.main .content .price-card .price p {
+  color: var(--white-color--);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.main .content .note {
+  margin-top: 30px;
+  color: var(--white-color--);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.main .form {
+  height: auto;
+  padding: 0 0 1rem;
+  background: var(--light-grey-color--);
+}
+
+.main .form img {
+  width: 100%;
+  padding: 0;
+}
+
+.main .form-content {
+  width: 410px;
+  height: auto;
+  margin: auto;
+  transform: translateY(-30px);
+  background: var(--light-grey-color--);
+}
+.main .form-content h2 {
+  font-family: "Faustina";
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  color: var(--light-red-color--);
+}
+.main .form-details {
+  width: 356px;
+  height: auto;
+  margin: auto;
+}
+.main .form-details .card {
+  padding: 10px;
+}
+.main .form-details .card p {
+  font-family: "Faustina";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  color: #757575;
+}
+.main .form-details .card p.light {
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aeaeae;
+}
+.main .form-details .card p.dark {
+  line-height: 0%;
+  color: var(--black-color--);
+}
+
+.main .form-details form {
+  margin: 1.5rem 0;
+}
+.main .form-details form h3 {
+  font-family: "Faustina";
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black-color--);
+  margin: 20px 0;
+}
+.main .form-details form .form-control {
+  margin-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--light-grey-color--);
+  border-bottom: 1px solid #aeaeae;
+}
+.main .form-details form label {
+  font-size: 1rem;
+}
+.main .form-details form .credit {
+  font-size: 0.8rem;
+}
+.main .form-details form .credit .light {
+  color: #aeaeae;
+  margin-left: 5px;
+}
+.main .form-details form .form-control input {
+  font-size: 1rem;
+}
+.main .form-details form .svg-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main .form-details form .icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+}
+.main .form-details form .icon-booking {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 0;
+}
+.main .form-details form .icon-booking-end {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+}
+.main .btn {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  background: #ff2f6c;
+  border-radius: 6px;
+}
+@media (min-width: 765px) and (max-width: 993px) {
+  .main .form-content {
+    width: 610px;
+  }
+  .main .form-details {
+    width: 456px;
+  }
+}
+@media (max-width: 398px) {
+  .main .form-content {
+    width: 350px;
+  }
+  .main .form-details {
+    width: 316px;
+  }
+}
